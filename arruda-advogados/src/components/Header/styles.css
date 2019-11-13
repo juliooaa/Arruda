@@ -1,0 +1,9 @@
+.headerWrapper {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    display: flex;
+    z-index: 2;
+    height: 3em;
+    background-color: #293742;
+}
