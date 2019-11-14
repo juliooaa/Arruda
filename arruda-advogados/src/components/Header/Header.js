@@ -31,7 +31,7 @@ function Header() {
             <div class="contentSearch">
                 <input type="search" placeholder="Pesquisar na plataforma..." dir="auto" />
                 <button>
-                    <Icon icon="search" iconSize={20} />
+                    <Icon icon="search" iconSize={14} color="#ACACAC" />
                 </button>
             </div>
         </div>

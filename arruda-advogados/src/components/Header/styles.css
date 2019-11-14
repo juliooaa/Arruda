@@ -44,7 +44,7 @@
     background-color: #212C35 ;
     font-weight: bold;
     border: 1px solid #212C35;
-    padding: 10px 20px 14px 18px;
+    padding: 14px 20px 14px 18px;
     color: #ACACAC;
 }
 
@@ -53,5 +53,6 @@
     border: 1px solid #212C35;
     border-radius: 3px;
     opacity: 1;
-    padding-top: 2px;
+    padding-top: 7px;
+    padding-bottom: 21px;
 }
