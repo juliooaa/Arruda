@@ -21,9 +21,23 @@
 
 .contentList li {
     display: flex;
-    flex-direction: column;
-    justify-content: end;
-    text-align: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contentList span {
+    padding-top: 2%;
+}
+
+.contentMenu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contentMenu p {
+    padding-right: 5%;
+    display: flex;
 }
 
 .contentList p {
