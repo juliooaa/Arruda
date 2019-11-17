@@ -1,14 +1,14 @@
-import React, {Component} from "react"
+import React from "react"
 import { Icon } from "@blueprintjs/core";
 
 import "./styles.css"
 
 function Header() {
     
-    const names = ['Agenda', 'Usuários', 'Pessoas', 'Casos', 'Documentações'];
+    const titles = ['Agenda', 'Usuários', 'Pessoas', 'Casos', 'Documentações'];
     const icons = ['calendar', 'people', 'user', 'document', 'box'];
 
-    const listMenu = names.map((value) =>
+    const listMenu = titles.map((value) =>
         <p>{value}</p>
     );
     const listIcons = icons.map((value) => 
@@ -21,12 +21,12 @@ function Header() {
             <ul className="contentList">
                 <li>
                     {listIcons}
-                    <div className="contentMenu">
-                        {listMenu}
-                    </div>
                 </li>
+                <div className="contentMenu">
+                    {listMenu}
+                </div>
             </ul>
-            <div class="contentSearch">
+            <div className="research">
                 <input type="search" placeholder="Pesquisar na plataforma..." dir="auto" />
                 <button>
                     <Icon icon="search" iconSize={14} color="#ACACAC" />
