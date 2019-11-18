@@ -1,0 +1,20 @@
+.options {
+    position: fixed;
+    top: 4em;
+    width: 13vw;
+    height: 100vh;
+    background-color: #293742;
+}
+
+.options ul {
+    display: flex;
+}
+
+.options li {
+
+}
+
+.options p {
+    color: #ACACAC;
+    font-size: 12px;
+}
