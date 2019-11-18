@@ -18,14 +18,19 @@ function registerPerson() {
         <div className="container">
             <h1>Cadastrar:</h1>
             
-            <div className="buttons">
-                <button type="button">Button</button>
+            <div className="containerButtons">
                 <button type="button">Pessoas físicas</button>
+                <button type="button">Pessoas jurídicas</button>
             </div>
-            <div className="form">
+            <div className="containerForm">
                 {listInputs}
             </div>
-            <button Icon="arrow-right" type="button" text="Next step" />
+            <div className="register">
+                <button>
+                    <Icon icon="add" iconSize={13} color="#FFFFFF" />
+                    Cadastrar pessoa física
+                </button>
+            </div>
         </div>
     )
 }
