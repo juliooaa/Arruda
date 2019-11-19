@@ -10,7 +10,7 @@ function menu() {
     );
     
     return(
-        <div className="options">
+        <div className="content">
             <ul>
                 <li>
                     {listOptions}

@@ -1,4 +1,4 @@
-.options {
+.content {
     position: fixed;
     top: 4em;
     width: 13vw;
@@ -6,15 +6,19 @@
     background-color: #293742;
 }
 
-.options ul {
+.content ul {
     display: flex;
+    padding-left: 7%;
 }
 
-.options li {
-
+.content li {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid #1E2731;
+    border-bottom: 1px solid #1E2731;
 }
 
-.options p {
+.content p {
     color: #ACACAC;
     font-size: 12px;
 }
