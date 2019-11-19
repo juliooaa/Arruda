@@ -14,13 +14,17 @@ function registerPerson() {
         </Label>
     );
 
+    function handleRegister(value) {
+        console.log(value)
+    }
+
     return(
         <div className="container">
             <h1>Cadastrar:</h1>
             
             <div className="containerButtons">
-                <button type="button">Pessoas físicas</button>
-                <button type="button">Pessoas jurídicas</button>
+                <button onClick={handleRegister("b1")} id='a1'>Pessoas físicas</button>
+                <button onClick={handleRegister("b2")} id='a2'>Pessoas jurídicas</button>
             </div>
             <div className="containerForm">
                 {listInputs}
