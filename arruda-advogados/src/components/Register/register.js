@@ -1,34 +1,42 @@
-import React from "react"
+import React, { useState } from "react"
 import { Icon, Classes } from "@blueprintjs/core";
 import { Label } from "@blueprintjs/core";
 
 import "./styles.css"
 
-function registerPerson() {
+function RegisterPerson() {
 
-    const inputs = ['Nome*', 'Cpf', 'RG', 'Email', 'Profissão', 'Estado civil', 'Nacionalidades*', 'Conjugue', 'Informações adicionais...'];
+    const personInputs = ['Nome*', 'Cpf', 'RG', 'Email', 'Profissão', 'Estado civil', 'Nacionalidade*', 'Conjugue', 'Informações adicionais...'];
+    const legalInputs = ['Razão social*', 'Cnpj', 'IE', 'Email', 'Atividade', 'Sócio responsável', 'Informações adicionais...'];      
 
-    const listInputs = inputs.map((value) =>
+    const [inputs, setInputs] = useState('person');
+    
+    const listPerson = personInputs.map((value) =>
         <Label>
-            <input className={Classes.INPUT} placeholder={value} />
+            <input placeholder={value} />
         </Label>
     );
 
-    function handleRegister(value) {
-        console.log(value)
-    }
+    const listLegal = legalInputs.map((value) =>
+        <Label>
+            <input placeholder={value} />
+        </Label>
+    );
 
+    
     return(
         <div className="container">
             <h1>Cadastrar:</h1>
             
             <div className="containerButtons">
-                <button onClick={handleRegister("b1")} id='a1'>Pessoas físicas</button>
-                <button onClick={handleRegister("b2")} id='a2'>Pessoas jurídicas</button>
+                <button onClick={()=>setInputs('person')}>Pessoas físicas</button>
+                <button onClick={()=>setInputs('legal')}>Pessoas jurídicas</button>
             </div>
+
             <div className="containerForm">
-                {listInputs}
+                {inputs === 'person' ? listPerson : listLegal}
             </div>
+            
             <div className="register">
                 <button>
                     <Icon icon="add" iconSize={13} color="#FFFFFF" />
@@ -39,4 +47,4 @@ function registerPerson() {
     )
 }
 
-export default registerPerson
+export default RegisterPerson
